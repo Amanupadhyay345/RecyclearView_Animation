@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.view.animation.LayoutAnimationController
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding.mainRecyclearview.adapter = MainAdapter()
 
         binding.Animation.setOnClickListener {
+
+            Toast.makeText(this,"hello github",Toast.LENGTH_LONG).show()
             loadAnimation(binding.mainRecyclearview)
         }
 
